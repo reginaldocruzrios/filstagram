@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minstagram - UI</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="build/css/app.css">
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="header__logo contenedor">
+                <a class="header__enlace" href="index.html">
+                    <h1 class="header__heading">MiInstagram</h1>
+                </a>
+            </div>
+
+            <div class="header__grid contenedor">
+                <div class="header__formulario">
+                    <form class="formulario">
+                        <input class="formulario__buscador" type="search"
+                            placeholder="Buscar">
+                    </form>
+                </div>
+
+                <div class="header__burger" id="burger"></div>
+
+                <div class="header__nav" id="navegacion">
+                    <nav class="navegacion">
+                        <a class="navegacion__link" href="#"><i class="fas fa-home"></i></a>
+                        <a class="navegacion__link" href="#"><i class="fab
+                                fa-facebook-messenger"></i></a>
+                        <a class="navegacion__link" href="#"><i class="fas
+                                fa-camera"></i></a>
+                        <a class="navegacion__link" href="#"><i class="fas
+                                fa-universal-access"></i></a>
+                        <a class="navegacion__link" href="#"><i class="fas
+                                fa-heart"></i></a>
+                        <a class="navegacion__link" id="subMenu" href="#"><i
+                                class="fas fa-user"></i>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="perfil contenedor">
+            <div class="perfil__grid">
+                <div class="perfil__imagen">
+                    <img class="perfil__img" src="build/img/fiesta-saved.jpg"
+                        alt="imagen perfil">
+                </div>
+
+                <div class="perfil__informacion">
+                    <div class="perfil__flex">
+                        <h2 class="perfil__heading">Roxana_72</h2>
+                        <a class="perfil__edicion" href="#">Editar perfil</a>
+                        <a class="perfil__configuracion" href="#"><i class="fas fa-cog"></i></a>
+                    </div>
+
+                    <div class="datos">
+                        <p class="datos__bold">5 <span>Publicaciones</span></p>
+                        <p class="datos__bold">432<span>Seguidores </span></p>
+                        <p class="datos__bold">782<span>Seguidos </span></p>
+                    </div>
+
+                    <div class="usuario">
+                        <div class="usuario__name" id="usuario">
+                            <!--Scripts in JS-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="destacada">
+            <div class="destacada__grid">
+
+                <div class="destacada__historia">
+                    <img class="destacada__imagen" src="build/img/atardecer.jpg" alt="historia destacada">
+                    <p class="destacada__informacion">Atardeceres</p>
+                </div>
+
+                <div class="destacada__historia">
+                    <img class="destacada__imagen" src="build/img/atardecer.jpg"
+                        alt="historia destacada">
+                    <p class="destacada__informacion">Atardeceres</p>
+                </div>
+
+                <div class="destacada__historia">
+                    <img class="destacada__imagen" src="build/img/atardecer.jpg"
+                        alt="historia destacada">
+                    <p class="destacada__informacion">Atardeceres</p>
+                </div>
+            </div>
+        </section>
+
+        <main class="main contenedor">
+            <div class="main__secciones">
+                <p class="main__nombres main__nombres--border"> publicaciones</p>
+                <p class="main__nombres main__nombres--pt2"> guardado</p>
+                <p class="main__nombres main__nombres--pt2"> etiquetadas</p>
+            </div>
+
+            <div class="main__grid">
+
+                <div class="publicacion" id="publi">
+                    <img class="publicacion__imagen" src="build/img/fiesta-saved.jpg" alt="imagen del usuario">
+                    <div class="publicacion__contenido">
+                        <div class="publicacion__flex">
+                            <div class="publicacion__interaccion">
+                                <a class="publicacion__icono" href="#"><i class="fas fa-heart"></i></a>
+                                <a class="publicacion__icono" href="#"><i class="fab fa-facebook-messenger"></i></a>
+                                <a class="publicacion__icono" href="#"><i class="fas fa-location-arrow"></i></a>
+                            </div>
+                            <div class="publicacion__guardar">
+                                <a class="publicacion__icono" href="#"><i class="fas fa-bookmark"></i></a>
+                            </div>
+                        </div>
+                        <div class="publicacion__like">
+                            <img class="publicacion__like-imagen" src="build/img/fiesta-saved.jpg" alt="imagen like publicacion">
+                            <p class="publicacion__like-personas">Les gusta a <span>luisGonzales32</span> y <span>otras peronas mas</span></p>
+                        </div>
+                        <div class="publicacion__menciones">
+                            <p class="publicacion__usuario">Roxana_72<span>Pasandola Bien</span></p>
+                            <p class="publicacion__comentarios">Ver 15 comentarios</p>
+                            <p class="publicacion__tiempo">Hace 10 horas</p>
+                        </div>
+                    </div> <!-- .publicacion__contenido -->
+                </div>
+
+
+                <div class="publicacion" id="publi">
+                    <img class="publicacion__imagen" src="build/img/fiesta-saved.jpg" alt="imagen del usuario">
+
+                    <div class="publicacion__contenido">
+                        <div class="publicacion__flex">
+                            <div class="publicacion__interaccion">
+                                <a class="publicacion__icono" href="#"><i class="fas fa-heart"></i></a>
+                                <a class="publicacion__icono" href="#"><i class="fab fa-facebook-messenger"></i></a>
+                                <a class="publicacion__icono" href="#"><i class="fas fa-location-arrow"></i></a>
+                            </div>
+                            <div class="publicacion__guardar">
+                                <a class="publicacion__icono" href="#"><i class="fas fa-bookmark"></i></a>
+                            </div>
+                        </div>
+                        <div class="publicacion__like">
+                            <img class="publicacion__like-imagen" src="build/img/fiesta-saved.jpg" alt="imagen like publicacion">
+                            <p class="publicacion__like-personas">Les gusta a <span>luisGonzales32</span> y <span>otras peronas mas</span></p>
+                        </div>
+                        <div class="publicacion__menciones">
+                            <p class="publicacion__usuario">Roxana_72<span>Pasandola Bien</span></p>
+                            <p class="publicacion__comentarios">Ver 15 comentarios</p>
+                            <p class="publicacion__tiempo">Hace 10 horas</p>
+                        </div>
+                    </div> <!-- .publicacion__contenido -->
+                </div>
+
+                <div class="publicacion" id="publi">
+                    <img class="publicacion__imagen" src="build/img/fiesta-saved.jpg" alt="imagen del usuario">
+
+                    <div class="publicacion__contenido">
+                        <div class="publicacion__flex">
+                            <div class="publicacion__interaccion">
+                                <a class="publicacion__icono" href="#"><i class="fas fa-heart"></i></a>
+                                <a class="publicacion__icono" href="#"><i class="fab fa-facebook-messenger"></i></a>
+                                <a class="publicacion__icono" href="#"><i class="fas fa-location-arrow"></i></a>
+                            </div>
+                            <div class="publicacion__guardar">
+                                <a class="publicacion__icono" href="#"><i class="fas fa-bookmark"></i></a>
+                            </div>
+                        </div>
+                        <div class="publicacion__like">
+                            <img class="publicacion__like-imagen" src="build/img/fiesta-saved.jpg" alt="imagen like publicacion">
+                            <p class="publicacion__like-personas">Les gusta a <span>luisGonzales32</span> y <span>otras peronas mas</span></p>
+                        </div>
+                        <div class="publicacion__menciones">
+                            <p class="publicacion__usuario">Roxana_72<span>Pasandola Bien</span></p>
+                            <p class="publicacion__comentarios">Ver 15 comentarios</p>
+                            <p class="publicacion__tiempo">Hace 10 horas</p>
+                        </div>
+                    </div> <!-- .publicacion__contenido -->
+                </div>
+
+                <div class="publicacion">
+                    <img class="publicacion__imagen" src="build/img/fiesta-saved.jpg" alt="imagen del usuario">
+                    <div class="publicacion__contenido">
+                        <div class="publicacion__flex">
+                            <div class="publicacion__interaccion">
+                                <a class="publicacion__icono" href="#"><i class="fas fa-heart"></i></a>
+                                <a class="publicacion__icono" href="#"><i class="fab fa-facebook-messenger"></i></a>
+                                <a class="publicacion__icono" href="#"><i class="fas fa-location-arrow"></i></a>
+                            </div>
+                            <div class="publicacion__guardar">
+                                <a class="publicacion__icono" href="#"><i class="fas fa-bookmark"></i></a>
+                            </div>
+                        </div>
+                        <div class="publicacion__like">
+                            <img class="publicacion__like-imagen" src="build/img/fiesta-saved.jpg" alt="imagen like publicacion">
+                            <p class="publicacion__like-personas">Les gusta a <span>luisGonzales32</span> y <span>otras peronas mas</span></p>
+                        </div>
+                        <div class="publicacion__menciones">
+                            <p class="publicacion__usuario">Roxana_72<span>Pasandola Bien</span></p>
+                            <p class="publicacion__comentarios">Ver 15 comentarios</p>
+                            <p class="publicacion__tiempo">Hace 10 horas</p>
+                        </div>
+                    </div> <!-- .publicacion__contenido -->
+                </div>
+
+                <div class="publicacion">
+                    <img class="publicacion__imagen" src="build/img/fiesta-saved.jpg" alt="imagen del usuario">
+                    <div class="publicacion__contenido">
+                        <div class="publicacion__flex">
+                            <div class="publicacion__interaccion">
+                                <a class="publicacion__icono" href="#"><i class="fas fa-heart"></i></a>
+                                <a class="publicacion__icono" href="#"><i class="fab fa-facebook-messenger"></i></a>
+                                <a class="publicacion__icono" href="#"><i class="fas fa-location-arrow"></i></a>
+                            </div>
+                            <div class="publicacion__guardar">
+                                <a class="publicacion__icono" href="#"><i class="fas fa-bookmark"></i></a>
+                            </div>
+                        </div>
+                        <div class="publicacion__like">
+                            <img class="publicacion__like-imagen" src="build/img/fiesta-saved.jpg" alt="imagen like publicacion">
+                            <p class="publicacion__like-personas">Les gusta a <span>luisGonzales32</span> y <span>otras peronas mas</span></p>
+                        </div>
+                        <div class="publicacion__menciones">
+                            <p class="publicacion__usuario">Roxana_72<span>Pasandola Bien</span></p>
+                            <p class="publicacion__comentarios">Ver 15 comentarios</p>
+                            <p class="publicacion__tiempo">Hace 10 horas</p>
+                        </div>
+                    </div> <!-- .publicacion__contenido -->
+                </div>
+
+                <div class="publicacion">
+                    <img class="publicacion__imagen" src="build/img/fiesta-saved.jpg" alt="imagen del usuario">
+                    <div class="publicacion__contenido">
+                        <div class="publicacion__flex">
+                            <div class="publicacion__interaccion">
+                                <a class="publicacion__icono" href="#"><i class="fas fa-heart"></i></a>
+                                <a class="publicacion__icono" href="#"><i class="fab fa-facebook-messenger"></i></a>
+                                <a class="publicacion__icono" href="#"><i class="fas fa-location-arrow"></i></a>
+                            </div>
+                            <div class="publicacion__guardar">
+                                <a class="publicacion__icono" href="#"><i class="fas fa-bookmark"></i></a>
+                            </div>
+                        </div>
+                        <div class="publicacion__like">
+                            <img class="publicacion__like-imagen" src="build/img/fiesta-saved.jpg" alt="imagen like publicacion">
+                            <p class="publicacion__like-personas">Les gusta a <span>luisGonzales32</span> y <span>otras peronas mas</span></p>
+                        </div>
+                        <div class="publicacion__menciones">
+                            <p class="publicacion__usuario">Roxana_72<span>Pasandola Bien</span></p>
+                            <p class="publicacion__comentarios">Ver 15 comentarios</p>
+                            <p class="publicacion__tiempo">Hace 10 horas</p>
+                        </div>
+                    </div> <!-- .publicacion__contenido -->
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer contenedor">
+            <div class="footer__contenido">
+                <div class="footer__widget">
+                    <nav class="footer__nav">
+                        <a class="footer__enlace" href="#">Meta</a>
+                        <a class="footer__enlace" href="#">Informacion</a>
+                        <a class="footer__enlace" href="#">Empleo</a>
+                        <a class="footer__enlace" href="#">Blog</a>
+                        <a class="footer__enlace" href="#">Ayuda</a>
+                        <a class="footer__enlace" href="#">Api</a>
+                        <a class="footer__enlace" href="#">Privacidad</a>
+                        <a class="footer__enlace" href="#">Condiciones</a>
+                        <a class="footer__enlace" href="#">Cuenta destacada</a>
+                        <a class="footer__enlace" href="#">Hashtags</a>
+                        <a class="footer__enlace" href="#">Ubicaciones</a>
+                        <a class="footer__enlace" href="#">Instagram lite</a>
+                    </nav>
+                </div>
+            </div>
+            <p class="footer__copy">MiInstagram 2022 Todos los derechos reservados</p>
+        </footer>
+
+
+
+
+        <script src="https://kit.fontawesome.com/0fb3906d52.js" crossorigin="anonymous"></script>
+        <script src="build/js/app.js"></script>
+    </body>
+</html>
